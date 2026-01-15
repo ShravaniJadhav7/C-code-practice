@@ -12,6 +12,7 @@ int main()
     scanf("%c", &sub);
 
     printf("you entered %c as your \n", sub);
+
     if (sub == s)
     {
         printf("Congratulations you got 15 gifts");
