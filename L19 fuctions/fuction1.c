@@ -1,16 +1,21 @@
 #include <stdio.h>
-int sum(int a, int b)
+#include <stdbool.h>
+int sumation(int a, float b)
 {
-    return a + b;
+
+    float x = a + b;
+    // printf("%d \n", x);
+    return x;
 }
 
 int main()
 {
-    int a, b, c;
-
-    a = 10;
-    b = 77;
-    c = sum(a, b);
-    printf("the sum is %d \n", c);
+    int a;
+    int b, x;
+    // bool c = true;
+    a = 100;
+    b = 20.30;
+    x = sumation(a, b);
+    printf("the sum is %f \n", x);
     return 0;
 }
