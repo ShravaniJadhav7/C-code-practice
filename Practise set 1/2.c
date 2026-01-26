@@ -5,15 +5,20 @@
 
 int main()
 {
-    int r;
-    float area;
+    int r, h;
+    float area, volume;
 
     printf("Enter radius: ");
     scanf("%d", &r);
+    printf("Enter height: ");
+    scanf("%d", &h);
 
     area = 3.14 * r * r;
 
     printf("Area of Circle = %.2f\n", area);
+
+    volume = 3.14 * r * r * h;
+    printf("Volume of Cylinder = %f", volume);
 
     return 0;
 }

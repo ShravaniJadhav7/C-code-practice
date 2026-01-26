@@ -1,21 +1,29 @@
 #include <stdio.h>
+
 int factorial(int number)
 {
-    if (number == 1 || number == 0)
+    printf("Function called with number = %d\n", number);
+
+    if (number == 0 || number == 1)
     {
-        return 1; // it returns 1 because factorial of 1 is also 1 and factorial of 0 is 1
+        printf("Base condition reached, returning 1\n\n");
+        return 1;
     }
-    else
-    {
-        return (number * factorial(number - 1));
-    }
+
+    int result = number * factorial(number - 1);
+    printf("Returning %d for number = %d\n\n", result, number);
+
+    return result;
 }
+
 int main()
 {
     int num;
-    printf("enter the number you want factorial of \n");
+    printf("Enter the number you want factorial of:\n");
     scanf("%d", &num);
-    printf("Factorial of %d is %d\n", num, factorial(num));
+
+    int ans = factorial(num);
+    printf("Final Result: Factorial of %d is %d\n", num, ans);
 
     return 0;
 }

@@ -7,7 +7,7 @@ int main()
     printf("enter the value in celcius you want to convert:");
     scanf("%f", &celcius);
 
-    // fahrenheit = (celcius * 9 / 5) + 32;
-    printf("celcius to fahrenheit conversion %.2f \n", 33 / 7);
+    fahrenheit = (celcius * 9 / 5) + 32;
+    printf("celcius to fahrenheit conversion %f \n", fahrenheit);
     return 0;
 }
